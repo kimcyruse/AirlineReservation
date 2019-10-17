@@ -1,0 +1,50 @@
+<resources>
+    <string name="app_name">Airline Reservation</string>
+    <string name="splash">splashImage</string>
+    <string name="Options">Options</string>
+    <string name="BookFlights">Book Flights</string>
+    <string name="Managemybookings">Book Flight >></string>
+    <string name="title">Title</string>
+    <string name="MyAccount">My Account</string>
+    <string name="FirstName">First Name</string>
+    <string name="LastName">Last Name</string>
+    <string name="Phone">Phone</string>
+    <string name="Spinner_Title">Choose</string>
+    <string name="Email">Email</string>
+    <string-array name="textTitle">
+        <item>Mr</item>
+        <item>Ms</item>
+        <item>Mrs</item>
+    </string-array>
+    <string name="CustomerInfo">Customers Information</string>
+    <string name="Register">Register >></string>
+    <string name="ChooseFlights">Choose Flights</string>
+    <string name="OneWay">One Way</string>
+    <string name="Return">Return</string>
+    <string name="Leaving">mm/dd/yyyy</string>
+    <string name="Returning">mm/dd/yyyy</string>
+    <string name="Adults">Adults:</string>
+    <string name="Childern">Childern:</string>
+    <string name="Infants">Infants:</string>
+    <string-array name="airportcodes">
+        <item>YVR Vancouver International Airport</item>
+        <item>YRV Revelstoke Airport</item>
+        <item>YPR Prince Rupert Airport</item>
+        <item>YLW Kelowna International Airport</item>
+        <item>YJA Jasper Airport</item>
+        <item>YEG Edmonton International Airport</item>
+    </string-array>
+    <string name="to">Flying To:</string>
+    <string name="from">Flying From:</string>
+    <string name="LeavingDate">Select the Leaving Date</string>
+    <string name="ReturnDate">Select the Returning Date</string>
+    <string name="buttonshowdata">View Reservation</string>
+    <string name="SearchFlights">Search Flights</string>
+    <string name="depart">Departing</string>
+    <string name="returni">Returning</string>
+    <string name="adulNo">0</string>
+    <string name="childNo">0</string>
+    <string name="BookFlight">Book Flight</string>
+    <string name="txtAppName">EaglePlus</string>
+    <string name="imgAppLogo">Application Logo</string>
+</resources>

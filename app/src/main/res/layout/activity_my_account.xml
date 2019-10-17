@@ -1,0 +1,210 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@android:color/black"
+    tools:context="com.example.tamana.airlinereservation.MyAccount">
+
+
+    <TableLayout xmlns:android="http://schemas.android.com/apk/res/android"
+        android:id="@+id/tableLayout"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentTop="true"
+        android:layout_marginLeft="13dp"
+        android:layout_marginStart="13dp"
+        android:background="@android:color/black"
+        android:stretchColumns="1">
+
+        <TableRow>
+
+            <TextView
+                android:id="@+id/MyAccount"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:background="@android:color/black"
+                android:contentDescription="@string/MyAccount"
+                android:text="@string/MyAccount"
+                android:textColor="@android:color/background_light"
+                android:textSize="26sp" />
+        </TableRow>
+
+        <TableRow>
+
+            <TextView
+                android:id="@+id/CustomerInfo"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:background="@android:color/black"
+                android:text="@string/CustomerInfo"
+                android:textColor="@android:color/background_light"
+                android:textSize="18sp" />
+        </TableRow>
+
+        <View
+            android:layout_height="2dip"
+            android:background="#FF909090" />
+
+        <TableRow>
+
+            <TextView
+                android:id="@+id/textView"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentLeft="true"
+                android:layout_alignParentStart="true"
+                android:layout_alignParentTop="true"
+                android:layout_marginLeft="29dp"
+                android:layout_marginStart="29dp"
+                android:layout_marginTop="17dp"
+                android:background="@android:color/black"
+                android:text="@string/title"
+                android:textColor="@android:color/background_light"
+                android:textSize="20sp" />
+        </TableRow>
+
+        <TableRow>
+
+            <Spinner
+                android:id="@+id/spinner"
+                android:layout_width="250dp"
+                android:layout_height="35dp"
+                android:layout_alignLeft="@+id/textView"
+                android:layout_alignStart="@+id/textView"
+                android:layout_below="@+id/textView"
+                android:layout_marginBottom="10dp"
+                android:layout_marginLeft="10dp"
+                android:layout_marginTop="11dp"
+                android:background="@android:color/background_light"
+                android:entries="@array/textTitle"
+                android:spinnerMode="dropdown" />
+        </TableRow>
+
+        <View
+            android:layout_height="2dip"
+            android:background="#FF909090" />
+
+        <TableRow>
+
+            <EditText
+                android:id="@+id/editTextFirstName"
+                android:layout_width="wrap_content"
+                android:layout_height="35dp"
+                android:layout_alignLeft="@+id/spinner"
+                android:layout_alignStart="@+id/spinner"
+                android:layout_below="@+id/spinner"
+                android:layout_marginLeft="10dp"
+                android:layout_marginTop="22dp"
+                android:background="@drawable/my_edit_text_border"
+                android:contentDescription="@string/FirstName"
+                android:ems="10"
+                android:gravity="center"
+                android:hint="@string/FirstName"
+                android:inputType="textPersonName" />
+        </TableRow>
+
+        <TableRow>
+
+            <EditText
+                android:id="@+id/editTextLastName"
+                android:layout_width="wrap_content"
+                android:layout_height="35dp"
+                android:layout_alignEnd="@+id/editTextFirstName"
+                android:layout_alignRight="@+id/editTextFirstName"
+                android:layout_below="@+id/editTextFirstName"
+                android:layout_marginBottom="10dp"
+                android:layout_marginLeft="10dp"
+                android:layout_marginTop="14dp"
+                android:background="@drawable/my_edit_text_border"
+                android:contentDescription="@string/LastName"
+                android:ems="10"
+                android:gravity="center"
+                android:hint="@string/LastName"
+                android:inputType="textPersonName" />
+        </TableRow>
+
+        <View
+            android:layout_height="2dip"
+            android:background="#FF909090" />
+
+        <TableRow>
+
+            <EditText
+                android:id="@+id/editTextEmail"
+                android:layout_width="wrap_content"
+                android:layout_height="35dp"
+                android:layout_alignLeft="@+id/editTextLastName"
+                android:layout_alignStart="@+id/editTextLastName"
+                android:layout_below="@+id/editTextLastName"
+                android:layout_marginLeft="10dp"
+                android:layout_marginTop="13dp"
+                android:background="@drawable/my_edit_text_border"
+                android:contentDescription="@string/Email"
+                android:ems="10"
+                android:gravity="center"
+                android:hint="@string/Email"
+                android:inputType="textEmailAddress" />
+        </TableRow>
+
+        <TableRow>
+
+            <EditText
+                android:id="@+id/editTextPhone"
+                android:layout_width="wrap_content"
+                android:layout_height="35dp"
+                android:layout_alignLeft="@+id/editTextEmail"
+                android:layout_alignStart="@+id/editTextEmail"
+                android:layout_below="@+id/editTextEmail"
+                android:layout_marginBottom="10dp"
+                android:layout_marginLeft="10dp"
+                android:layout_marginTop="16dp"
+                android:background="@drawable/my_edit_text_border"
+                android:contentDescription="@string/Phone"
+                android:ems="10"
+                android:gravity="center"
+                android:hint="@string/Phone"
+                android:inputType="phone" />
+        </TableRow>
+
+        <TableRow>
+
+        </TableRow>
+
+        <View
+            android:layout_height="2dip"
+            android:background="#FF909090" />
+
+    </TableLayout>
+
+    <Button
+        android:id="@+id/buttonRegister"
+        android:layout_width="155dp"
+        android:layout_height="45dp"
+        android:layout_marginBottom="17dp"
+        android:background="@android:color/holo_orange_light"
+        android:text="@string/Register"
+        android:textSize="20sp"
+        android:layout_above="@+id/buttonShowData"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentEnd="true"
+        android:layout_marginRight="14dp"
+        android:layout_marginEnd="14dp" />
+
+    <Button
+        android:id="@+id/buttonShowData"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:background="@android:color/holo_blue_dark"
+        android:text="@string/buttonshowdata"
+        android:textStyle="bold"
+        android:textSize="20sp"
+        android:textColor="@android:color/background_light"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true" />
+
+
+</RelativeLayout>

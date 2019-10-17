@@ -1,0 +1,226 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@android:color/black"
+    tools:context="com.example.tamana.airlinereservation.BookFlight">
+
+
+    <TextView
+        android:id="@+id/textView2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true"
+        android:text="@string/ChooseFlights"
+        android:textAlignment="gravity"
+        android:textColor="@android:color/background_light"
+        android:textSize="26sp" />
+
+    <Spinner
+        android:id="@+id/spinnerfromairportcodes"
+        android:layout_width="290dp"
+        android:layout_height="40dp"
+        android:layout_below="@+id/textViewFrom"
+        android:layout_toEndOf="@+id/textViewFrom"
+        android:layout_toRightOf="@+id/textViewFrom"
+
+        android:background="@android:color/background_light"
+        android:entries="@array/airportcodes"
+        android:spinnerMode="dialog">
+
+    </Spinner>
+
+    <TextView
+        android:id="@+id/textViewFrom"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/textView2"
+        android:layout_marginTop="13dp"
+        android:text="@string/from"
+        android:textColor="@android:color/background_light"
+        android:textSize="19sp" />
+
+    <TextView
+        android:id="@+id/textViewTo"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:layout_below="@+id/spinnerfromairportcodes"
+        android:text="@string/to"
+        android:textColor="@android:color/background_light"
+        android:textSize="19sp" />
+
+    <Spinner
+        android:id="@+id/spinnertoairportcodes"
+        android:layout_width="290dp"
+        android:layout_height="40dp"
+        android:layout_alignLeft="@+id/spinnerfromairportcodes"
+        android:layout_alignStart="@+id/spinnerfromairportcodes"
+        android:layout_below="@+id/textViewTo"
+
+        android:background="@android:color/background_light"
+        android:entries="@array/airportcodes"
+        android:spinnerMode="dialog" />
+
+    <TextView
+        android:id="@+id/textViewDeparting"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/Leaving"
+        android:textColor="@android:color/background_light"
+        android:textSize="19sp"
+        android:layout_alignBaseline="@+id/buttonLeavingDate"
+        android:layout_alignBottom="@+id/buttonLeavingDate"
+        android:layout_alignLeft="@+id/radioGroup"
+        android:layout_alignStart="@+id/radioGroup" />
+
+    <Button
+        android:id="@+id/buttonLeavingDate"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="18dp"
+        android:background="@android:color/holo_blue_dark"
+        android:onClick="showDatePickerDialog"
+        android:text="@string/depart"
+        android:textColor="@android:color/background_light"
+        android:textSize="16sp"
+        android:layout_below="@+id/radioGroup"
+        android:layout_alignLeft="@+id/textView4"
+        android:layout_alignStart="@+id/textView4" />
+
+    <TextView
+        android:id="@+id/textViewreturning"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBaseline="@+id/buttonReturningDate"
+        android:layout_alignBottom="@+id/buttonReturningDate"
+        android:layout_alignLeft="@+id/textViewDeparting"
+        android:layout_alignStart="@+id/textViewDeparting"
+        android:text="@string/Returning"
+        android:textColor="@android:color/background_light"
+        android:textSize="19sp" />
+
+    <Button
+        android:id="@+id/buttonReturningDate"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:background="@android:color/holo_blue_dark"
+        android:text="@string/returni"
+        android:textColor="@android:color/background_light"
+        android:textSize="16sp"
+        android:layout_below="@+id/buttonLeavingDate"
+        android:layout_alignLeft="@+id/buttonLeavingDate"
+        android:layout_alignStart="@+id/buttonLeavingDate"
+        android:layout_marginTop="12dp" />
+
+
+    <TextView
+        android:id="@+id/textViewAnswer"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="31dp"
+        android:textColor="@android:color/background_light"
+        android:textSize="20sp"
+        android:layout_alignParentBottom="true"
+        android:layout_alignRight="@+id/editTextAdultsNo"
+        android:layout_alignEnd="@+id/editTextAdultsNo" />
+
+    <Button
+        android:id="@+id/buttonSearchFlights"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:background="@android:color/holo_orange_light"
+        android:text="@string/SearchFlights"
+        android:textSize="20sp"
+        android:layout_alignTop="@+id/textViewAnswer"
+        android:layout_alignLeft="@+id/textView5"
+        android:layout_alignStart="@+id/textView5"
+        android:layout_marginLeft="10dp"
+        android:layout_marginStart="10dp" />
+
+
+    <RadioGroup
+        android:id="@+id/radioGroup"
+        android:layout_width="290dp"
+        android:layout_height="60dp"
+        android:layout_below="@+id/spinnertoairportcodes"
+        android:layout_marginLeft="13dp"
+        android:layout_marginStart="13dp"
+        android:layout_marginTop="11dp"
+        android:layout_toEndOf="@+id/buttonReturningDate"
+        android:layout_toRightOf="@+id/buttonReturningDate">
+
+        <RadioButton
+            android:id="@+id/radioButtonReturn"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="@string/Return"
+            android:textColor="@android:color/background_light" />
+
+        <RadioButton
+            android:id="@+id/radioButtonOneWay"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="@string/OneWay"
+            android:textColor="@android:color/background_light" />
+    </RadioGroup>
+
+    <TextView
+        android:id="@+id/textView4"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/Adults"
+        android:textColor="@android:color/background_light"
+        android:textSize="20sp"
+        android:layout_below="@+id/buttonReturningDate"
+        android:layout_alignRight="@+id/textViewTo"
+        android:layout_alignEnd="@+id/textViewTo"
+        android:layout_marginTop="20dp" />
+
+    <EditText
+        android:id="@+id/editTextAdultsNo"
+        android:layout_width="50dp"
+        android:layout_height="wrap_content"
+        android:background="@android:color/background_light"
+        android:ems="10"
+        android:hint="@string/adulNo"
+        android:inputType="number"
+        android:textColor="@android:color/black"
+        android:layout_alignBottom="@+id/textView4"
+        android:layout_toRightOf="@+id/textView4"
+        android:layout_toEndOf="@+id/textView4" />
+
+    <EditText
+        android:id="@+id/editTextChildren"
+        android:layout_width="50dp"
+        android:layout_height="wrap_content"
+        android:layout_alignBaseline="@+id/textView5"
+        android:layout_alignBottom="@+id/textView5"
+        android:layout_toEndOf="@+id/textView2"
+        android:layout_toRightOf="@+id/textView2"
+        android:background="@android:color/background_light"
+        android:ems="10"
+        android:hint="@string/childNo"
+        android:inputType="number"
+        android:textColor="@android:color/black" />
+
+    <TextView
+        android:id="@+id/textView5"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBaseline="@+id/editTextAdultsNo"
+        android:layout_alignBottom="@+id/editTextAdultsNo"
+        android:layout_toLeftOf="@+id/editTextChildren"
+        android:layout_toStartOf="@+id/editTextChildren"
+        android:text="@string/Childern"
+        android:textColor="@android:color/background_light"
+        android:textSize="20sp" />
+
+
+</RelativeLayout>

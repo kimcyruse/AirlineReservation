@@ -1,0 +1,136 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@android:color/background_dark"
+    tools:context="com.example.tamana.airlinereservation.SelectedFlightDetails">
+
+    <TextView
+        android:id="@+id/textViewCustomerInfor"
+        android:layout_width="340dp"
+        android:layout_height="129dp"
+        android:textColor="@color/colorAccent"
+        android:textSize="18sp"
+        android:textStyle="bold"
+        />
+
+    <TextView
+        android:id="@+id/textViewDepartedFlightDate"
+        android:layout_width="380dp"
+        android:layout_height="wrap_content"
+        android:textColor="@android:color/holo_blue_light"
+        android:textSize="22sp"
+        android:textStyle="bold"
+        android:layout_above="@+id/textViewTo"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentEnd="true" />
+
+    <TextView
+        android:id="@+id/textViewTo"
+        android:layout_width="380dp"
+        android:layout_height="wrap_content"
+        android:textColor="@android:color/background_light"
+        android:textSize="18sp"
+        android:textStyle="bold"
+        android:layout_above="@+id/textViewFrom"
+        android:layout_centerHorizontal="true" />
+
+    <TextView
+        android:id="@+id/textViewFrom"
+        android:layout_width="380dp"
+        android:layout_height="wrap_content"
+        android:textColor="@android:color/background_light"
+        android:textSize="18sp"
+        android:textStyle="bold"
+        android:layout_above="@+id/textViewFlight_Time"
+        android:layout_alignLeft="@+id/textViewTo"
+        android:layout_alignStart="@+id/textViewTo" />
+
+    <TextView
+        android:id="@+id/textViewFlight_Time"
+        android:layout_width="380dp"
+        android:layout_height="wrap_content"
+        android:textColor="@android:color/background_light"
+        android:textSize="18sp"
+        android:layout_above="@+id/textViewFlight_Duration"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentEnd="true" />
+
+    <TextView
+        android:id="@+id/textViewFlight_Duration"
+        android:layout_width="380dp"
+        android:layout_height="wrap_content"
+        android:textColor="@android:color/background_light"
+        android:textSize="18sp"
+        android:layout_above="@+id/textViewReturnFlightDate"
+        android:layout_alignLeft="@+id/textViewFrom"
+        android:layout_alignStart="@+id/textViewFrom" />
+
+    <TextView
+        android:id="@+id/textViewReturnFlightDate"
+        android:layout_width="380dp"
+        android:textSize="22sp"
+        android:textStyle="bold"
+        android:layout_height="wrap_content"
+        android:textColor="@android:color/holo_blue_light"
+        android:layout_centerVertical="true"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true" />
+
+    <TextView
+        android:id="@+id/textViewReturnDetails"
+        android:layout_width="380dp"
+        android:layout_height="wrap_content"
+        android:textSize="22sp"
+        android:textStyle="bold"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentRight="true"
+        android:textColor="@android:color/holo_blue_light"
+        android:layout_below="@+id/textViewReturnFlightDate"
+        android:layout_marginTop="27dp"
+        />
+    <TextView
+        android:layout_width="380dp"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/textViewReturnDetails"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentEnd="true"
+        android:textSize="18sp"
+        android:textStyle="bold"
+        android:id="@+id/textViewReturnFrom"
+        android:textColor="@android:color/background_light"
+        />
+    <TextView
+        android:layout_width="380dp"
+        android:layout_height="wrap_content"
+        android:textSize="18sp"
+        android:textStyle="bold"
+        android:id="@+id/textViewReturnTo"
+        android:layout_below="@+id/textViewReturnFrom"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentEnd="true"
+        android:textColor="@android:color/background_light"/>
+    <TextView
+        android:layout_width="380dp"
+        android:layout_height="wrap_content"
+        android:textSize="18sp"
+        android:id="@+id/textViewReturnTime"
+        android:layout_below="@+id/textViewReturnTo"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentEnd="true"
+        android:textColor="@android:color/background_light"/>
+    <TextView
+        android:layout_width="380dp"
+        android:layout_height="wrap_content"
+        android:textSize="18sp"
+        android:id="@+id/textViewReturnDuration"
+        android:layout_below="@+id/textViewReturnTime"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentEnd="true"
+        android:textColor="@android:color/background_light"/>
+
+
+
+</RelativeLayout>
